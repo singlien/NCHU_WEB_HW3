@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+ 	<head>
+ 		<meta charset="UTF-8">
+		<link rel="stylesheet" href="cssForBlog.css">
+		<script src="summit.js"></script>
+    <script src="nodeCP.js"></script>
+
+	</head>
+	<body bgcolor="silver">
+	<div class="sign-up">
+		<div class="signup-box">
+			<form class="createaccount-form" id="createaccount" name="createaccount" action="" method="post">
+				<fieldset>
+					  <legend><strong>名稱</strong></legend>
+					  <label id="name-label" class="name">
+					  <strong>姓名</strong>
+					  <input type="text" value="Alex" name="Name" id="Name" placeholder="name">
+					  </label>
+					  <label id="sex-label" class="sex"><br>
+					  <strong>性別</strong>
+					  <label><input type="radio" name="sex" value="男生" checked>男生</label>
+					  <label><input type="radio" name="sex" value="女生" >女生</label><br>
+					  </label>
+					  <label id="year-label" class="year">
+					  <strong>年</strong>
+					  <input type="text" maxlength="4" value="1997" name="BirthYear" id="BirthYear" placeholder="yy">
+				  </label>
+				  <label id="month-label" class="month">
+	  				  <strong>月</strong>
+					  <input type="text" maxlength="2" value="1" name="BirthMonth" id="BirthMonth" placeholder="mm">
+				  </label>
+				  <label id="day-label" class="day">
+					  <strong>日</strong>
+					  <input type="text" maxlength="2" value="1" name="BirthDay" id="BirthDay" placeholder="dd">
+				  </label>
+				</fieldset>
+			</form>
+		</div>
+		  <fieldset>
+			  <legend><strong id="Self-introduction">自我介紹</strong></legend>
+			  <textarea style="width: 87px; height: 87px;" id="self-intro">請輸入興趣</textarea>
+		  </fieldset>
+		  <input type="button" value="提交" id="Summit" onclick="summitt()">
+		  <table id="output" align="center">
+      <p id="welcome" onclick="createTable()">歡迎您光臨</p>
+
+		  </table>
+
+	  </div>
+
+
+
+	</body>
+</html>
